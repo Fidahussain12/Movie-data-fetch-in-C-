@@ -1,0 +1,22 @@
+class Movies
+{
+    string name , release_year; 
+
+    public Movies(string name , string release_year)
+    {
+        this.name = name;
+        this.release_year = release_year;
+    }
+    public string GetMovies()
+    {
+        return (this.name + " \n " + this.release_year);
+    }
+
+    static void Main()
+    {
+        Movies m1 = new Movies("alaska", "1909");
+        Console.WriteLine(m1.GetMovies());   
+    
+    }
+
+}
